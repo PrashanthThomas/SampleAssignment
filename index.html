@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Full Name</title>
+    <script>
+        const showFullName = () => {
+            const fNEle = document.getElementById("firstName");
+            const lNEle = document.getElementById("lastName");
+            console.log(fNEle.value + lNEle.value);
+            alert(`Full name is ${fNEle.value} ${lNEle.value}`);
+        }
+    </script>
+</head>
+<body>
+    <style>
+        #firstNameLabel, #lastNameLabel {
+            color: blue;
+        }
+        #btn-display {
+            border-radius: 5px;
+            height: 30px;
+            width: 100px;
+            color: white;
+            background-color: grey;
+            border-color: blue;
+        }
+        body {
+            background-color: lightslategray;
+        }
+    </style>
+    <label id="firstNameLabel">First Name</label>
+    <input id="firstName"></input>
+    <br>
+    <label id="lastNameLabel">Last Name</label>
+    <input id="lastName"></input>
+    <br>
+    <button id="btn-display" onclick="showFullName()">Submit</button>
+</body>
+</html>
