@@ -1,0 +1,14 @@
+#firstNameLabel, #lastNameLabel {
+    color: blue;
+}
+#btn-display {
+    border-radius: 5px;
+    height: 30px;
+    width: 100px;
+    color: white;
+    background-color: grey;
+    border-color: blue;
+}
+body {
+    background-color: lightslategray;
+}
